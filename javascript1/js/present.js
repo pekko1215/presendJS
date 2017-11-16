@@ -1,10 +1,10 @@
 $(() => {
     var slides = [];
-    var slideURL = "/slides/"
+    var slideURL = "./slides/"
     var slideIdx = 1;
     slides.push(slideURL + "1.html");
 
-    $('.slider').append($('<iframe allowfullscreen>').attr({ frameborder: 0 }).addClass('slide').attr({ src: "/slides/1.html" }))
+    $('.slider').append($('<iframe allowfullscreen>').attr({ frameborder: 0 }).addClass('slide').attr({ src: "./slides/1.html" }))
     appendMiniSlide(slideURL + '1.html', 1);
     (function autoLoad(idx) {
         var url = slideURL + `${idx}.html`;
