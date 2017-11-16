@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function f(){
+            document.querySelector('#ret').value = document.querySelector('#inp').value.split('').map((e)=>{return String.fromCharCode(e.charCodeAt(0)+1)}).join('')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="title2">HTML、CSSとの関係</div>
+    <hr>
+    <ul>
+		<li>Javascriptと連携したHTMLの例</li>
+    </ul>
+    何か入力してください<br>
+    <input id="inp" onkeyup="f()">
+    <input id="ret" disabled>
+    <br>
+    <input type="button" value="サイコロ" onclick="alert(Math.floor(Math.random()*6)+1)">
+    <ul>
+        <li>Javascriptと連携することで、ウェブページに動きを持たせることができる</li>
+    </ul>
+</body>
+
+</html>

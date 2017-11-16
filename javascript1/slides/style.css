@@ -1,0 +1,44 @@
+.title{
+	font-size: 9vw;
+	text-align: center;
+}
+.subtitle{
+	font-size:6vh;
+	text-align: right;
+}
+.title2{
+	font-size: 12vh;
+}
+
+li{
+	font-size: 6vh;
+	/*text-shadow: 2px 2px 1px #999999;*/
+}
+
+input{
+	font-size:5vh;
+}
+
+html,body{
+  overflow: hidden
+}
+body{
+	background-image: url(background.jpg);
+	margin: 4vw;
+	font-size: 4vh;
+}
+
+.hint{
+	color:#000022;
+	text-decoration: underline;
+}
+
+li .strong{
+	font-size: 8vh;
+	color:#aa0000;
+}
+
+
+.titlebody{
+	margin-top: 20vh;
+}

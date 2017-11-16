@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+		function f(){
+			var win = open('2.html','','');
+			win.onload=()=>{
+				win.document.write(`<pre>${(win.document.documentElement.outerHTML||win.documentElement.innerHTML).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</pre>`)}
+		}
+    </script>
+</head>
+
+<body>
+    <div class="title2">HTML、CSSとの関係</div>
+    <hr>
+    <ul>
+		<li>デモ</li>
+    </ul>
+    <input type="button" value="新しいタブが開きます" onclick="f()">
+</body>
+
+</html>
