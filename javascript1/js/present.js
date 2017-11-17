@@ -1,6 +1,6 @@
 $(() => {
     var slides = [];
-    var slideURL = "./slides/"
+    var slideURL = "/slides/"
     var slideIdx = 1;
     slides.push(slideURL + "1.html");
 
